@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details - Property in Chiloe</title>
+    <link rel="stylesheet" href="details-styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/605578c8ca.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+ 
+        <nav id="desktop_nav">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+              <i class="fa-solid fa-bars"></i>
+          </label>
+          <label class="logo"><a href="index.html">CHILOE</a></label>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="details.html">Details</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        
+    <div class="full-img" id="fullImgBox">
+        <img src="images/MAIN PHOTOS/1.jpg" alt="" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="images/What is Included.png" alt="What is Included in the Sale?" onclick="openFullImg(this.src)">
+        <img src="images/desc 1.png" alt="Description of the property" onclick="openFullImg(this.src)">
+        <img src="images/desc 2.png" alt="Description of the property" onclick="openFullImg(this.src)">
+        
+    </div>
+    <div class="install-text">
+      <p>If there is any issue with displaying the images, download them by clicking <a href="images/">here.</a></p>
+      
+  </div>
+
+  <div class="full-img" id="fullImgBox">
+    <img src="images/MAIN PHOTOS/1.jpg" alt="" id="fullImg">
+    <span onclick="closeFullImg()">X</span>
+</div>
+<div class="img-gallery">
+    <img src="images/the land outline.png" alt="What is Included in the Sale?" onclick="openFullImg(this.src)">
+    <img src="images/the land outline 2.png" alt="Description of the property" onclick="openFullImg(this.src)">
+</div>
+
+<div class="map">
+  <h1>Location of Land</h1>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d9543.815047245509!2d-73.44746872373217!3d-42.139048892072616!2m3!1f0
+  !2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDA4JzIwLjQiUyA3M8KwMjYnMTcuMyJX!5e1!3m2!1sen!2sge!4v1723829835406!5m2!1sen!2sge?key=AIz
+  aSyA63C6_RRbKxQbichyJftcEEdg5Zg4wIFY" allowfullscreen=""
+  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+  <div class="details" id="details">
+    <h1>All Inclusive Property Price: <hr><span>1,240,000 USD</span><hr><span>31000 UF</span><hr></h1>
+    <a href="details.html">Click Here</a>
+ </div>
+  <div class="contact-container">
+    <div class="contact-container2">
+    
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-title">
+            <h2>Get In Touch</h2>
+            <hr>
+        </div>
+            <input type="hidden" name="access_key" value="e97dc13f-8862-4c67-b3a6-88ba4be9fdc2">
+            <input type="text" name="firstname" placeholder="Your Name" class="contact-inputs" required>
+            <input type="text" name="lastname" placeholder="Your Surname" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your E-mail" class="contact-inputs" required>
+            <input type="tel" name="phone" class="contact-inputs" placeholder="+123456789" required>
+            <textarea name="message" placeholder="" class="contact-inputs" required></textarea>
+            <button type="submit">Submit</button>
+    </form>
+    <div class="contact-right">
+        <img src="" alt="">
+    </div>
+    </div>
+</div>
+
+
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+
+    window.onkeyup = function (event) {
+     if (event.keyCode == 27) {
+        fullImgBox.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

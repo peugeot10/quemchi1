@@ -1,0 +1,128 @@
+.contact-container2 {
+    height: 80vh;
+    padding-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #c0c0c0;
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #c0c0c0;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .contact-container h1 {
+    font-size: 3em;
+  }
+  
+  .contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  
+  .contact-title h2 {
+    font-weight: 600;
+    color: ;
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  .contact-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #000;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px ;
+    font-weight: 500;
+    border-radius: 20px;
+  }
+  
+  .contact-left textarea {
+    height: 120px;
+    padding-top: 15px;
+    border-radius: 0px;
+  }
+  
+  .contact-inputs::placeholder {
+    color: #d3d3d3;
+    font-size: 1.2em;
+  }
+  
+  .contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 18px 35px;
+    font-size: 24px;
+    font-family: "Bitter", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    background: black;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+  
+  @media (max-width:800px) {
+    .contact-inputs {
+        
+    }
+    .contact-right {
+      display: none;
+    }
+    
+    .contact-container{
+        min-height: 100vh;
+    }
+
+    .contact-container h1{
+        
+        display: none;
+    }
+
+    .contact-title h2 {
+        margin-top: 8vh;
+    }
+  }
+
+  @media (max-height:800px) {
+    .contact-container{
+        min-height: 100vh;
+    }
+    
+  }
+
+  @media  (max-width:600px) {
+    .contact-title h2 {
+        font-size 0.4em;
+    }
+    .contact-container2 {
+        max-width: 100vw;
+    }
+    .contact-container {
+        max-width: 100vw;
+    }
+
+    .contact-inputs {
+    width: 250px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 25px;
+    }
+  }
